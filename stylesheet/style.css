@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: #f6f6f6;
+}
+
+/* Header */
+
+.header{
+    background-color: #f6f6f6;
+    border-radius: 0px 0px 40px 40px;
+    padding: 15px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 1px 10px #604c3a50;
+}
+
+.header__logo{
+    height: 60px;
+    width: 60px;
+    background-image: url(../assets/g-logo-10.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.header__nav ul{
+    display: flex;
+    gap: 10px;
+    font-family: 'Raleway';
+    font-size: 0.8rem;   
+}
+
+/* Portada */
+
+.portada{
+    height: 50vh;
+    background-image: url(../assets/portada.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px 0px 40px 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada__texto{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.encabezadoIndex{
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+}
+
+/* Frase */
+
+.frase__contenedor{
+    height: 25vh;
+    padding-top: 40px;
+
+    display: flex;
+    justify-content: center;
+}
+.frase__index{
+    width: 80%;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 200;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+
+/* Imagen Graciela */
+
+.graciela__imagen{
+    height: 45vh;
+    background-image: url(../assets/graciela.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+    border: 1px solid #604C3A;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.graciela__texto{
+    font-family: 'Raleway';
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5rem;
+    margin: 40px;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    color: black;
+    font-family: 'Raleway';
+    font-weight: 600;
+    background-color:white;
+    border: 1px solid #604C3A;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+/* Propuestas */
+
+.propuestas{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.propuestas__title{
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    color: #604C3A;
+}
+
+hr{
+    color: #B9AC96;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.tarjetas__title{
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.25rem;
+    color: #604C3A;
+}
+
+.tarjetas__text{
+    font-family: 'Raleway';
+    line-height: 1.5rem;
+    margin: 40px;
+}
+
+.btn2{
+    font-family: 'Raleway';
+    font-weight: 600;
+    color: black;
+    text-decoration: underline;
+}
+
+.talento{
+    background-color: #b9ac9650;
+    border-radius: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.talento__title{
+    font-family: 'DM Serif Display', serif;
+    color: #604C3A;
+    font-size: 1.3rem;
+    padding-bottom: 40px;
+}
+
+.talento__text{
+    font-family: 'Raleway';
+    line-height: 1.7rem;
+    color: #604C3A;
+    padding: 20px;
+}
+
+span{
+    font-weight: 700;
+}
+
+.talento__img{
+    height: 242px;
+
+    background-image: url(../assets/talentouno.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    border: 1px solid #604C3A;
+    margin: 20px;
+}
+
+.talento__img--dos{
+    height: 242px;
+
+    background-image: url(../assets/talentodos.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    border: 1px solid #604C3A;
+    margin: 20px; 
+}
+
+.testimonios{
+    padding-top: 100px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.testimonios__title{
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    color: #604C3A;
+}
+
+.testimonios__individuales{
+    background-color: white;
+    border-radius: 40px;
+    border: 1px solid #604C3A;
+    margin: 20px;
+    padding: 20px;
+}
+
+.testimonios__text{
+    font-family: 'Raleway';
+    line-height: 1.7rem;
+}
+
+
+/* TABLET */
+
+@media (min-width: 744px){
+
+    .header__logo{
+        height: 60px;
+        width: 120px;
+        background-image: url(../assets/logo2mama-09.png);
+        background-position: center;
+        background-size: cover;
+        margin-left: 20px;
+    }
+
+    .header__nav ul{
+        margin-right: 20px; 
+        gap: 40px
+    }
+
+    .portada{
+        height: 70vh;
+    }
+
+    .frase__index{
+        width: 50%;
+    }
+
+    .graciela{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 85% 15%;
+
+        grid-template-areas:
+        "imagen texto"
+        "imagen botones";
+    }
+
+    .graciela__imagen{
+        grid-area: imagen;
+        grid-row: 1/3;
+        grid-column: 1/2;
+    }
+
+    .graciela__texto{
+        text-align: start;
+        grid-area: texto;
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .botones{
+        grid-area: botones;
+        height: 60px;
+        justify-content: space-evenly;
+    }
+
+}
+
+
+/* DESKTOP */
+        
+@media (min-width: 1200px){
+    
+    .portada{
+        height: 85vh;
+    }
+
+    .encabezadoIndex{
+        font-size: 2.3rem;
+    }
+
+    .header__nav ul{
+    gap: 100px;
+    }
+
+    /* Sobre Graciela */
+
+    .graciela__imagen{
+        margin-left: 150px;
+    }
+
+    .graciela__texto{
+        margin-right: 150px;
+        line-height: 1.7rem;
+    }
+
+    .botones{
+        display: block;
+        margin: 40px;
+    }
+
+    .btn{
+        margin-right: 20px;
+        box-shadow: 0px 1px 10px #604c3a50;
+    }
+
+    /* .btn:hover{
+        box-shadow: 0px 1px 10px #604c3a50;
+    } */
+
+    .tarjetas{
+        display: flex;
+    }
+    .tarjetas__texto-btn{
+        width: 40%;
+        text-align: start;
+    }
+
+    .tarjetas__title{
+        width: 35%;
+        margin-left: 150px;
+        text-align: start;
+    }
+
+    .tarjetas__text{
+        margin-top: 0;
+    }
+
+    .btn2{
+        margin-left: 40px;
+    }
+
+    hr{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .talento{
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-align: start;
+        padding-bottom: 40px;
+    }
+
+    .talento__title{
+        padding-left: 60px;
+    }
+
+    .talento__text--img-uno{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .talento__img{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        margin-right: 60px;
+    }
+
+    .talento__text.desktop{
+        width: 85%;
+        margin-left: 40px;
+    }
+
+    .talento__img--dos{
+        width: 50vw;
+        margin-left: 60px;
+    }
+
+    .talento__text{
+        width: 50vw;
+        margin-right: 40px;
+    }
+
+    .talento__text--img-dos{
+        display: flex;
+    }
+
+    .testimonios__tarjetas{
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .testimonios__individuales{
+        width: 340px;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+
+
+}
