@@ -1,3 +1,5 @@
+/* RESETEO */
+
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +18,7 @@ body{
     background-color: #f6f6f6;
 }
 
+/* SITIO WEB */
 /* Header */
 
 .header{
@@ -43,6 +46,7 @@ body{
 
 .header__nav ul{
     display: flex;
+    align-items: baseline;
     gap: 10px;
     font-family: 'Raleway';
     font-size: 0.8rem;   
@@ -166,6 +170,8 @@ hr{
     text-decoration: underline;
 }
 
+/* Frase Vocacional-Talento */
+
 .talento{
     background-color: #b9ac9650;
     border-radius: 40px;
@@ -214,6 +220,8 @@ span{
     margin: 20px; 
 }
 
+/* Testimonios */
+
 .testimonios{
     padding-top: 100px;
     padding-bottom: 80px;
@@ -239,6 +247,85 @@ span{
     line-height: 1.7rem;
 }
 
+/* Contacto */
+
+.contacto{
+    text-align: center;
+}
+
+.contacto__title{
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    color: #604C3A;
+}
+
+.contacto__text{
+    font-family: 'Raleway';
+    line-height: 1.7rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.formulario{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.formulario__input{
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border:#604C3A solid 1px;
+    font-family: 'Raleway';
+
+}
+
+.formulario__encuentro{
+    margin-top: 20px;
+}
+
+.formulario__checkbox{
+    height: 20px;
+    width: 20px;
+}
+
+label{
+    font-family: 'Raleway';
+}
+
+.formulario__btn{
+    margin-top: 20px;
+}
+
+.form__btn{
+    color: black;
+    font-family: 'Raleway';
+    font-weight: 600;
+    background-color:white;
+    border: 1px solid #604C3A;
+    padding: 10px 20px 10px 20px;
+    border-radius: 40px;
+}
+
+/* Footer */
+.footer{
+    height: 350px;
+    background-color: white;
+    border-radius: 40px 40px 0px 0px;
+    
+    box-shadow: 0px -1px 10px #604c3a50
+}
+
+.footer__logo{
+    height: 70px;
+    width: 150px;
+    background-image: url(../assets/logo2mama-09.png);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+
 
 /* TABLET */
 
@@ -256,6 +343,16 @@ span{
     .header__nav ul{
         margin-right: 20px; 
         gap: 40px
+    }
+
+    .btn-desktop{
+        color: black;
+        font-family: 'Raleway';
+        font-weight: 600;
+        background-color:white;
+        border: 1px solid #604C3A;
+        padding: 10px 20px 10px 20px;
+        border-radius: 40px;
     }
 
     .portada{
@@ -417,10 +514,35 @@ span{
     }
 
     .testimonios__individuales{
-        width: 340px;
+        width: 330px;
         margin: 0;
         margin-top: 20px;
     }
+
+    /* Formulario de Contacto */
+
+
+
+.contacto__text{
+    margin-left: 330px;
+    margin-right: 330px;
+
+}
+
+.formulario{
+    margin-top: 40px;
+}
+
+.formulario__input{
+    width: 50%;
+    padding: 14px;
+    margin-top: 20px;
+}
+
+.formulario__encuentro{
+    margin-top: 20px;
+}
+
 
 
 
