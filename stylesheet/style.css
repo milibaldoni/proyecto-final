@@ -8,6 +8,7 @@
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 ul{
@@ -18,7 +19,7 @@ body{
     background-color: #f6f6f6;
 }
 
-/* SITIO WEB */
+/* SITIO WEB HOME */
 /* Header */
 
 .header{
@@ -66,6 +67,13 @@ body{
     align-items: center;
 }
 
+/* Portada Contacto */
+.portada.contacto{
+    height: 50vh;
+    background-image: url(../assets/contacto-portada.jpg);
+    margin: 0;
+}
+
 .portada__texto{
     text-align: center;
     padding-bottom: 50px;
@@ -74,6 +82,30 @@ body{
 .encabezadoIndex{
     font-family: 'DM Serif Display', serif;
     font-size: 1.5rem;
+}
+
+/* Portada Propuestas */
+.portada__frase{
+    height: 40vh;
+    background-color: #ded0b7;
+    border-radius: 0px 0px 40px 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 10px #604c3a80;
+}
+.portada__frase-texto{
+    width: 80%;
+    text-align: center;
+    padding-top: 80px;
+    font-family: 'Raleway';
+    line-height: 2rem;
+    color: #604C3A;
+}
+.portada__encabezado-frase{
+    font-weight: 500;
+    padding-bottom: 20px;
 }
 
 /* Frase */
@@ -132,7 +164,7 @@ body{
 /* Propuestas */
 
 .propuestas{
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 80px;
     text-align: center;
 }
@@ -168,6 +200,24 @@ hr{
     font-weight: 600;
     color: black;
     text-decoration: underline;
+}
+
+/* Propuestas imagen */
+.propuestas__imagen{
+    height: 33vh;
+    background-image: url(../assets/mama-katharina.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+    border: #604C3A 1px solid;
+}
+.propuestas__imagen-dos{
+        height: 33vh;
+        background-image: url(../assets/propuestas-imagen-dos.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 40px;
+        border: #604C3A 1px solid;
 }
 
 /* Frase Vocacional-Talento */
@@ -223,7 +273,7 @@ span{
 /* Testimonios */
 
 .testimonios{
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 80px;
     text-align: center;
 }
@@ -247,7 +297,16 @@ span{
     line-height: 1.7rem;
 }
 
+/* Propuestas Botón*/
+.btn__solicitarencuentro{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
 /* Contacto */
+.contacto__title.mobile{
+    margin-top: 80px;
+}
 
 .contacto{
     text-align: center;
@@ -313,6 +372,7 @@ label{
     height: 350px;
     background-color: white;
     border-radius: 40px 40px 0px 0px;
+    padding: 20px;
     
     box-shadow: 0px -1px 10px #604c3a50
 }
@@ -324,6 +384,37 @@ label{
     background-position: center;
     background-size: cover;
     margin: auto;
+}
+
+.footer__list-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__list{
+    font-family: 'Raleway';
+}
+
+.footer__list-icons{
+    margin-top: 40px;
+}
+
+.footer__items{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.footer__redes{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.footer__redes i{
+    font-size: 2rem;
+}
+
+.bi.bi-linkedin{
+    padding-right: 20px;
 }
 
 
@@ -353,6 +444,10 @@ label{
         border: 1px solid #604C3A;
         padding: 10px 20px 10px 20px;
         border-radius: 40px;
+    }
+
+    .btn-desktop:hover{
+        box-shadow: 0px 1px 10px #604c3a70;
     }
 
     .portada{
@@ -402,6 +497,9 @@ label{
     .portada{
         height: 85vh;
     }
+    .portada.contacto{
+        height: 85vh;
+    }  
 
     .encabezadoIndex{
         font-size: 2.3rem;
@@ -429,12 +527,12 @@ label{
 
     .btn{
         margin-right: 20px;
-        box-shadow: 0px 1px 10px #604c3a50;
+        /* box-shadow: 0px 1px 10px #604c3a50; */
     }
 
-    /* .btn:hover{
-        box-shadow: 0px 1px 10px #604c3a50;
-    } */
+    .btn:hover{
+        box-shadow: 0px 1px 10px #604c3a70;
+    }
 
     .tarjetas{
         display: flex;
@@ -456,6 +554,10 @@ label{
 
     .btn2{
         margin-left: 40px;
+    }
+
+    .btn2:hover{
+        font-weight: 800;
     }
 
     hr{
@@ -521,29 +623,62 @@ label{
 
     /* Formulario de Contacto */
 
+    .contacto{
+        margin-top:80px;
+    }
 
+    .contacto__text{
+        margin-left: 330px;
+        margin-right: 330px;
+    }
 
-.contacto__text{
-    margin-left: 330px;
-    margin-right: 330px;
+    .formulario{
+        margin-top: 40px;
+    }
 
-}
+    .formulario__input{
+        width: 50%;
+        padding: 14px;
+        margin-top: 20px;
+    }
 
-.formulario{
-    margin-top: 40px;
-}
+    .formulario__encuentro{
+        margin-top: 20px;
+    }
 
-.formulario__input{
-    width: 50%;
-    padding: 14px;
-    margin-top: 20px;
-}
+    .form__btn:hover{
+        box-shadow: 0px 1px 10px #604c3a70;
+    }
 
-.formulario__encuentro{
-    margin-top: 20px;
-}
+    /* Propuestas imagen */
+    .propuestas__imagen{
+        margin-left: 130px;
+        margin-right: 130px;
+    }
+    .propuestas__imagen-dos{
+        margin-left: 130px;
+        margin-right: 130px;
+    }
 
+/* Footer */
 
+    .footer{
+        height: 170px;
+        display: flex;
+        justify-content: space-between;
+    }
 
+    .footer__list{
+        display: flex;
+        margin-right: 50px;
+    }
 
-}
+    .footer__items{
+        margin-right: 50px;
+    }
+
+    .footer__list-icons{
+        align-items: center;
+    }
+
+    }
