@@ -56,7 +56,7 @@ body{
 /* Portada */
 
 .portada{
-    height: 50vh;
+    height: 70vh;
     background-image: url(../assets/portada.jpg);
     background-position: center;
     background-size: cover;
@@ -69,7 +69,7 @@ body{
 
 /* Portada Contacto */
 .portada.contacto{
-    height: 50vh;
+    height: 55vh;
     background-image: url(../assets/contacto-portada.jpg);
     margin: 0;
 }
@@ -86,8 +86,8 @@ body{
 
 /* Portada Propuestas */
 .portada__frase{
-    height: 40vh;
-    background-color: #ded0b7;
+    height: 55vh;
+    background-color: #b9ac9631;
     border-radius: 0px 0px 40px 40px;
 
     display: flex;
@@ -111,8 +111,8 @@ body{
 /* Frase */
 
 .frase__contenedor{
-    height: 25vh;
     padding-top: 40px;
+    padding-bottom: 40px;
 
     display: flex;
     justify-content: center;
@@ -127,6 +127,10 @@ body{
 }
 
 /* Imagen Graciela */
+.graciela.sobremi{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
 
 .graciela__imagen{
     height: 45vh;
@@ -363,7 +367,7 @@ label{
     font-weight: 600;
     background-color:white;
     border: 1px solid #604C3A;
-    padding: 10px 20px 10px 20px;
+    padding: 20px;
     border-radius: 40px;
 }
 
@@ -416,6 +420,72 @@ label{
 .bi.bi-linkedin{
     padding-right: 20px;
 }
+
+/* Sección Formación - Sobre mí */
+.formacion{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.formacion__title{
+font-family: 'DM Serif Display', serif;
+font-size: 1.5rem;
+color: #604C3A;
+}
+
+.educacion__title{
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.25rem;
+    color: #604C3A;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.educacion__text{
+    font-family: 'Raleway';
+    line-height: 1.5rem;
+    margin: 10px 20px 40px 20px;
+}
+
+.botones.sobremi{
+    margin-bottom: 80px;
+}
+
+/* Página Blog */
+.notas{
+    margin: 80px 20px 80px 20px;
+}
+
+.notas__tarjeta{
+    background-color: white;
+    border-radius: 40px;
+    border: 1px solid #604C3A;
+    margin: 20px;
+    padding: 20px;
+}
+
+.notas__img{
+    height: 250px;
+    background-color: #B9AC96;
+    border: #604C3A 1px solid;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.notas__title{
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.notas__intro{
+    font-family: 'Raleway';
+    margin-bottom: 20px;
+}
+
+
+
 
 
 /* TABLET */
@@ -487,6 +557,32 @@ label{
         justify-content: space-evenly;
     }
 
+    .educacion{
+        text-align: start;
+        margin-left: 50px;
+        width: 80%;
+    }
+
+    /* Página Blog */
+
+.notas__tarjeta{
+    display: flex;
+    align-items: center;
+}
+
+.notas__responsive{
+    width: 50%;
+    margin-left: 20px;
+
+}
+
+.notas__img{
+    height: 250px;
+    width: 250px;
+    margin-bottom: 0;
+}
+
+
 }
 
 
@@ -508,6 +604,13 @@ label{
     .header__nav ul{
     gap: 100px;
     }
+
+    /* Frase */
+    .frase__contenedor{
+        margin-bottom: 80px;
+    }
+
+
 
     /* Sobre Graciela */
 
@@ -681,4 +784,23 @@ label{
         align-items: center;
     }
 
+    /* Formacion - Sobre mi */
+    .educacion{
+        margin-left: 150px;
+        width: 80%;
     }
+    .botones.sobremi{
+        margin-bottom: 120px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Página Blog */
+.notas{
+    margin: 80px 150px 100px 150px;
+}
+
+.btn2.desktop{
+    margin: 0;
+}
+}
