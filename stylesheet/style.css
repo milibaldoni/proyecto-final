@@ -467,10 +467,24 @@ color: #604C3A;
 
 .notas__img{
     height: 250px;
-    background-color: #B9AC96;
+    background-image: url(../assets/notauno.jpg);
+    background-position: center;
+    background-size: cover;
     border: #604C3A 1px solid;
     border-radius: 20px;
     margin-bottom: 20px;
+}
+
+.notas__img.dos{
+    background-image: url(../assets/notados.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.notas__img.tres{
+    background-image: url(../assets/notatres.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .notas__title{
@@ -635,6 +649,7 @@ color: #604C3A;
 
     .btn:hover{
         box-shadow: 0px 1px 10px #604c3a70;
+        transition: all 0.25s ease;
     }
 
     .tarjetas{
