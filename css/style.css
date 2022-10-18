@@ -1,0 +1,773 @@
+@charset "UTF-8";
+/* RESETEO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+.encabezadoIndex {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5rem;
+}
+
+.frase__contenedor {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.frase__index {
+  width: 80%;
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: 200;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+hr {
+  color: #B9AC96;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Frase Vocacional-Talento */
+.talento {
+  background-color: rgba(185, 172, 150, 0.3137254902);
+  border-radius: 40px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.talento__title {
+  font-family: "DM Serif Display", serif;
+  color: #604C3A;
+  font-size: 1.3rem;
+  padding-bottom: 40px;
+}
+
+.talento__text {
+  font-family: "Raleway";
+  line-height: 1.7rem;
+  color: #604C3A;
+  padding: 20px;
+}
+
+span {
+  font-weight: 700;
+}
+
+.talento__img {
+  height: 242px;
+  background-image: url(../assets/talentouno.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  border: 1px solid #604C3A;
+  margin: 20px;
+}
+
+.talento__img--dos {
+  height: 242px;
+  background-image: url(../assets/talentodos.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  border: 1px solid #604C3A;
+  margin: 20px;
+}
+
+@media (min-width: 744px) {
+  .frase__index {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .frase__contenedor {
+    margin-bottom: 80px;
+  }
+  hr {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .talento {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: start;
+    padding-bottom: 40px;
+  }
+  .talento__title {
+    padding-left: 60px;
+  }
+  .talento__text--img-uno {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .talento__img {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin-right: 60px;
+  }
+  .talento__text.desktop {
+    width: 85%;
+    margin-left: 40px;
+  }
+  .talento__img--dos {
+    width: 50vw;
+    margin-left: 60px;
+  }
+  .talento__text {
+    width: 50vw;
+    margin-right: 40px;
+  }
+  .talento__text--img-dos {
+    display: flex;
+  }
+}
+/* Propuestas */
+.propuestas {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.propuestas__title {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5rem;
+  color: #604C3A;
+}
+
+.tarjetas__title {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.25rem;
+  color: #604C3A;
+}
+
+.tarjetas__text {
+  font-family: "Raleway";
+  line-height: 1.5rem;
+  margin: 40px;
+}
+
+/* Propuestas imagen */
+.propuestas__imagen {
+  height: 33vh;
+  background-image: url(../assets/mama-katharina.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+  border: #604C3A 1px solid;
+}
+
+.propuestas__imagen-dos {
+  height: 33vh;
+  background-image: url(../assets/propuestas-imagen-dos.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+  border: #604C3A 1px solid;
+}
+
+/* Testimonios */
+.testimonios {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.testimonios__title {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5rem;
+  color: #604C3A;
+}
+
+.testimonios__individuales {
+  background-color: white;
+  border-radius: 40px;
+  border: 1px solid #604C3A;
+  margin: 20px;
+  padding: 20px;
+}
+
+.testimonios__text {
+  font-family: "Raleway";
+  line-height: 1.7rem;
+}
+
+/* Propuestas Botón*/
+.btn__solicitarencuentro {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 1200px) {
+  .tarjetas {
+    display: flex;
+  }
+  .tarjetas__texto-btn {
+    width: 40%;
+    text-align: start;
+  }
+  .tarjetas__title {
+    width: 35%;
+    margin-left: 150px;
+    text-align: start;
+  }
+  .tarjetas__text {
+    margin-top: 0;
+  }
+  .testimonios__tarjetas {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .testimonios__individuales {
+    width: 330px;
+    margin: 0;
+    margin-top: 20px;
+  }
+}
+/* Sección Formación - Sobre mí */
+.formacion {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.formacion__title {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5rem;
+  color: #604C3A;
+}
+
+.educacion__title {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.25rem;
+  color: #604C3A;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.educacion__text {
+  font-family: "Raleway";
+  line-height: 1.5rem;
+  margin: 10px 20px 40px 20px;
+}
+
+.botones.sobremi {
+  margin-bottom: 80px;
+}
+
+@media (min-width: 744px) {
+  .educacion {
+    text-align: start;
+    margin-left: 50px;
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  /* Formacion - Sobre mi */
+  .educacion {
+    margin-left: 150px;
+    width: 80%;
+  }
+  .botones.sobremi {
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.notas {
+  margin: 80px 20px 80px 20px;
+}
+
+.notas__tarjeta {
+  background-color: white;
+  border-radius: 40px;
+  border: 1px solid #604C3A;
+  margin: 20px;
+  padding: 20px;
+}
+
+.notas__img {
+  height: 250px;
+  background-image: url(../../assets/notauno.jpg);
+  background-position: center;
+  background-size: cover;
+  border: #604C3A 1px solid;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.notas__img.dos {
+  background-image: url(../../assets/notados.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.notas__img.tres {
+  background-image: url(../../assets/notatres.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.notas__title {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.notas__intro {
+  font-family: "Raleway";
+  margin-bottom: 20px;
+}
+
+@media (min-width: 744px) {
+  .notas__tarjeta {
+    display: flex;
+    align-items: center;
+  }
+  .notas__responsive {
+    width: 50%;
+    margin-left: 20px;
+  }
+  .notas__img {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .notas {
+    margin: 80px 150px 100px 150px;
+  }
+  .btn2.desktop {
+    margin: 0;
+  }
+}
+.contacto__title.mobile {
+  margin-top: 80px;
+}
+
+.contacto {
+  text-align: center;
+}
+
+.contacto__title {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5rem;
+  color: #604C3A;
+}
+
+.contacto__text {
+  font-family: "Raleway";
+  line-height: 1.7rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  color: black;
+  font-family: "Raleway";
+  font-weight: 600;
+  background-color: white;
+  border: 1px solid #604C3A;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.btn2 {
+  font-family: "Raleway";
+  font-weight: 600;
+  color: black;
+  text-decoration: underline;
+}
+
+.form__btn {
+  color: black;
+  font-family: "Raleway";
+  font-weight: 600;
+  background-color: white;
+  border: 1px solid #604C3A;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.botones.sobremi {
+  margin-bottom: 80px;
+}
+
+@media (min-width: 744px) {
+  .btn-desktop {
+    color: black;
+    font-family: "Raleway";
+    font-weight: 600;
+    background-color: white;
+    border: 1px solid #604C3A;
+    padding: 10px 20px 10px 20px;
+    border-radius: 40px;
+  }
+  .btn-desktop:hover {
+    box-shadow: 0px 1px 10px rgba(96, 76, 58, 0.4392156863);
+  }
+}
+@media (min-width: 1200px) {
+  .botones {
+    display: block;
+    margin: 40px;
+  }
+  .btn {
+    margin-right: 20px;
+  }
+  .btn:hover {
+    box-shadow: 0px 1px 10px rgba(96, 76, 58, 0.4392156863);
+    transition: all 0.25s ease;
+  }
+  .btn2 {
+    margin-left: 40px;
+  }
+  .btn2:hover {
+    font-weight: 800;
+  }
+  .botones.sobremi {
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+  }
+  .btn2.desktop {
+    margin: 0;
+  }
+}
+.portada {
+  height: 70vh;
+  background-image: url(../../assets/portada.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 0px 40px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada__frase {
+  height: 55vh;
+  background-color: rgba(185, 172, 150, 0.1921568627);
+  border-radius: 0px 0px 40px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 10px rgba(96, 76, 58, 0.5019607843);
+}
+
+.portada__frase-texto {
+  width: 80%;
+  text-align: center;
+  padding-top: 80px;
+  font-family: "Raleway";
+  line-height: 2rem;
+  color: #604C3A;
+}
+
+.portada__encabezado-frase {
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.portada.contacto {
+  height: 55vh;
+  background-image: url(../assets/contacto-portada.jpg);
+  margin: 0;
+}
+
+.portada__texto {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.encabezadoIndex {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 744px) {
+  .portada {
+    height: 70vh;
+  }
+}
+@media (min-width: 1200px) {
+  .portada {
+    height: 85vh;
+  }
+  .portada.contacto {
+    height: 85vh;
+  }
+  .encabezadoIndex {
+    font-size: 2.3rem;
+  }
+}
+.header {
+  background-color: #f6f6f6;
+  border-radius: 0px 0px 40px 40px;
+  padding: 15px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 1px 10px rgba(96, 76, 58, 0.3137254902);
+}
+.header__logo {
+  height: 60px;
+  width: 60px;
+  background-image: url(../../assets/g-logo-10.png);
+  background-position: center;
+  background-size: contain;
+}
+.header__nav ul {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-family: "Raleway";
+  font-size: 0.8rem;
+}
+
+@media (min-width: 744px) {
+  .header__logo {
+    height: 60px;
+    width: 120px;
+    background-image: url(../../assets/logo2mama-09.png);
+    background-position: center;
+    background-size: cover;
+    margin-left: 20px;
+  }
+  .header__nav ul {
+    margin-right: 20px;
+    gap: 40px;
+  }
+  .btn-desktop {
+    color: black;
+    font-family: "Raleway";
+    font-weight: 600;
+    background-color: white;
+    border: 1px solid #604C3A;
+    padding: 10px 20px 10px 20px;
+    border-radius: 40px;
+  }
+  .btn-desktop:hover {
+    box-shadow: 0px 1px 10px rgba(96, 76, 58, 0.4392156863);
+  }
+}
+.graciela.sobremi {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.graciela__imagen {
+  height: 45vh;
+  background-image: url(../../assets/graciela.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+  border: 1px solid #604C3A;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.graciela__texto {
+  font-family: "Raleway";
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5rem;
+  margin: 40px;
+}
+
+@media (min-width: 744px) {
+  .graciela {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 75% 25%;
+    grid-template-areas: "img texto" "img botones";
+  }
+  .graciela__imagen {
+    height: auto;
+    grid-area: img;
+    grid-row: span;
+    grid-column: span;
+  }
+  .graciela__texto {
+    text-align: start;
+    grid-area: texto;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 1200px) {
+  .graciela__imagen {
+    margin-left: 150px;
+  }
+  .graciela__texto {
+    margin-right: 150px;
+    line-height: 1.7rem;
+  }
+}
+.formulario {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.formulario__input {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: #604C3A solid 1px;
+  font-family: "Raleway";
+}
+
+.formulario__encuentro {
+  margin-top: 20px;
+}
+
+.formulario__checkbox {
+  height: 20px;
+  width: 20px;
+}
+
+label {
+  font-family: "Raleway";
+}
+
+.formulario__btn {
+  margin-top: 20px;
+}
+
+.form__btn {
+  color: black;
+  font-family: "Raleway";
+  font-weight: 600;
+  background-color: white;
+  border: 1px solid #604C3A;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+@media (min-width: 1200px) {
+  .formulario {
+    margin-top: 40px;
+  }
+  .formulario__input {
+    width: 50%;
+    padding: 14px;
+    margin-top: 20px;
+  }
+  .formulario__encuentro {
+    margin-top: 20px;
+  }
+  .form__btn:hover {
+    box-shadow: 0px 1px 10px rgba(96, 76, 58, 0.4392156863);
+  }
+  /* Propuestas imagen */
+  .propuestas__imagen {
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+  .propuestas__imagen-dos {
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+}
+.footer {
+  height: 350px;
+  background-color: white;
+  border-radius: 40px 40px 0px 0px;
+  padding: 20px;
+  box-shadow: 0px -1px 10px rgba(96, 76, 58, 0.3137254902);
+}
+
+.footer__logo {
+  height: 70px;
+  width: 150px;
+  background-image: url(../assets/logo2mama-09.png);
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+
+.footer__list-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__list {
+  font-family: "Raleway";
+}
+
+.footer__list-icons {
+  margin-top: 40px;
+}
+
+.footer__items {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.footer__redes {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.footer__redes i {
+  font-size: 2rem;
+}
+
+.bi.bi-linkedin {
+  padding-right: 20px;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__list {
+    display: flex;
+    margin-right: 50px;
+  }
+  .footer__items {
+    margin-right: 50px;
+  }
+  .footer__list-icons {
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

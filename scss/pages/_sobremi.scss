@@ -1,0 +1,55 @@
+/* Sección Formación - Sobre mí */
+.formacion{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.formacion__title{
+font-family: 'DM Serif Display', serif;
+font-size: 1.5rem;
+color: #604C3A;
+}
+
+.educacion__title{
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.25rem;
+    color: #604C3A;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.educacion__text{
+    font-family: 'Raleway';
+    line-height: 1.5rem;
+    margin: 10px 20px 40px 20px;
+}
+
+.botones.sobremi{
+    margin-bottom: 80px;
+}
+
+@media (min-width: 744px){
+
+    .educacion{
+        text-align: start;
+        margin-left: 50px;
+        width: 80%;
+    }
+}
+
+
+@media (min-width: 1200px){
+
+    /* Formacion - Sobre mi */
+    .educacion{
+        margin-left: 150px;
+        width: 80%;
+    }
+    .botones.sobremi{
+        margin-bottom: 120px;
+        display: flex;
+        justify-content: center;
+    }
+
+}

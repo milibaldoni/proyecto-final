@@ -1,0 +1,61 @@
+.graciela.sobremi{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.graciela__imagen{
+    height: 45vh;
+    background-image: url(../../assets/graciela.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+    border: 1px solid #604C3A;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.graciela__texto{
+    font-family: 'Raleway';
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5rem;
+    margin: 40px;
+}
+
+@media (min-width: 744px){
+
+    .graciela{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 75% 25%;
+
+        grid-template-areas:
+        "img texto"
+        "img botones";
+    }
+
+    .graciela__imagen{
+        height: auto;
+        grid-area: img;
+        grid-row: span;
+        grid-column: span;
+    }
+
+    .graciela__texto{
+        text-align: start;
+        grid-area: texto;
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+}
+
+@media (min-width: 1200px){
+
+    .graciela__imagen{
+        margin-left: 150px;
+    }
+
+    .graciela__texto{
+        margin-right: 150px;
+        line-height: 1.7rem;
+    }
+}

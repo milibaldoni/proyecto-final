@@ -1,0 +1,71 @@
+.footer{
+    height: 350px;
+    background-color: white;
+    border-radius: 40px 40px 0px 0px;
+    padding: 20px;
+    
+    box-shadow: 0px -1px 10px #604c3a50
+}
+
+.footer__logo{
+    height: 70px;
+    width: 150px;
+    background-image: url(../assets/logo2mama-09.png);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+
+.footer__list-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__list{
+    font-family: 'Raleway';
+}
+
+.footer__list-icons{
+    margin-top: 40px;
+}
+
+.footer__items{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.footer__redes{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.footer__redes i{
+    font-size: 2rem;
+}
+
+.bi.bi-linkedin{
+    padding-right: 20px;
+}
+
+// Media queries
+
+@media (min-width: 1200px){
+.footer{
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__list{
+    display: flex;
+    margin-right: 50px;
+}
+
+.footer__items{
+    margin-right: 50px;
+}
+
+.footer__list-icons{
+    align-items: center;
+}
+}

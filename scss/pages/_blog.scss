@@ -1,0 +1,75 @@
+.notas{
+    margin: 80px 20px 80px 20px;
+}
+
+.notas__tarjeta{
+    background-color: white;
+    border-radius: 40px;
+    border: 1px solid #604C3A;
+    margin: 20px;
+    padding: 20px;
+}
+
+.notas__img{
+    height: 250px;
+    background-image: url(../../assets/notauno.jpg);
+    background-position: center;
+    background-size: cover;
+    border: #604C3A 1px solid;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.notas__img.dos{
+    background-image: url(../../assets/notados.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.notas__img.tres{
+    background-image: url(../../assets/notatres.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.notas__title{
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.notas__intro{
+    font-family: 'Raleway';
+    margin-bottom: 20px;
+}
+
+@media (min-width: 744px){
+
+    .notas__tarjeta{
+        display: flex;
+        align-items: center;
+    }
+    
+    .notas__responsive{
+        width: 50%;
+        margin-left: 20px;
+    
+    }
+    
+    .notas__img{
+        height: 250px;
+        width: 250px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1200px){
+
+    .notas{
+        margin: 80px 150px 100px 150px;
+    }
+    
+    .btn2.desktop{
+        margin: 0;
+    }
+}

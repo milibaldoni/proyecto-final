@@ -1,0 +1,74 @@
+//Formulario
+
+.formulario{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.formulario__input{
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border:#604C3A solid 1px;
+    font-family: 'Raleway';
+
+}
+
+.formulario__encuentro{
+    margin-top: 20px;
+}
+
+.formulario__checkbox{
+    height: 20px;
+    width: 20px;
+}
+
+label{
+    font-family: 'Raleway';
+}
+
+.formulario__btn{
+    margin-top: 20px;
+}
+
+.form__btn{
+    color: black;
+    font-family: 'Raleway';
+    font-weight: 600;
+    background-color:white;
+    border: 1px solid #604C3A;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+@media (min-width: 1200px){
+
+    .formulario{
+        margin-top: 40px;
+    }
+
+    .formulario__input{
+        width: 50%;
+        padding: 14px;
+        margin-top: 20px;
+    }
+
+    .formulario__encuentro{
+        margin-top: 20px;
+    }
+
+    .form__btn:hover{
+        box-shadow: 0px 1px 10px #604c3a70;
+    }
+
+    /* Propuestas imagen */
+    .propuestas__imagen{
+        margin-left: 130px;
+        margin-right: 130px;
+    }
+    .propuestas__imagen-dos{
+        margin-left: 130px;
+        margin-right: 130px;
+    }
+}

@@ -1,0 +1,81 @@
+//Index
+
+.portada{
+    height: 70vh;
+    background-image: url(../../assets/portada.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px 0px 40px 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//Propuestas
+
+.portada__frase{
+    height: 55vh;
+    background-color: #b9ac9631;
+    border-radius: 0px 0px 40px 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 10px #604c3a80;
+}
+.portada__frase-texto{
+    width: 80%;
+    text-align: center;
+    padding-top: 80px;
+    font-family: 'Raleway';
+    line-height: 2rem;
+    color: #604C3A;
+}
+.portada__encabezado-frase{
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+//Contacto
+
+.portada.contacto{
+    height: 55vh;
+    background-image: url(../assets/contacto-portada.jpg);
+    margin: 0;
+}
+
+.portada__texto{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.encabezadoIndex{
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+}
+
+// Media queries - Tablet
+
+@media (min-width: 744px){
+
+    .portada{
+        height: 70vh;
+    }
+}
+
+// Media queries - Desktop
+
+@media (min-width: 1200px){
+    
+    .portada{
+        height: 85vh;
+    }
+    .portada.contacto{
+        height: 85vh;
+    }  
+
+    .encabezadoIndex{
+        font-size: 2.3rem;
+    }
+}
