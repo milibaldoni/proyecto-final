@@ -18,3 +18,16 @@ ul{
 body{
     background-color: #f6f6f6;
 }
+
+// En todas las páginas
+
+.signature{
+    background-color: white;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    &__text{
+        font-family: 'Raleway';
+        font-size: 0.75rem;
+        color: rgba(0, 0, 0, 0.59);
+    }
+}

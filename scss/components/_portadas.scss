@@ -41,7 +41,7 @@
 
 .portada.contacto{
     height: 55vh;
-    background-image: url(../../assets/tranquilidad.jpg);
+    background-image: url(../assets/contacto-counseling.jpg);
     margin: 0;
 }
 
@@ -53,6 +53,31 @@
 .encabezadoIndex{
     font-family: 'DM Serif Display', serif;
     font-size: 1.5rem;
+}
+
+.encabezadoIndex.white{
+    color: white;
+}
+
+//Nota uno
+.portada.contacto.notauno{
+    height: 55vh;
+    background-image: url(../assets/trabajo-cansancio.jpg);
+    margin: 0;
+}
+
+//Nota dos
+.portada.contacto.notados{
+    height: 55vh;
+    background-image: url(../assets/enojo-emociones.jpg);
+    margin: 0;
+}
+
+//Nota tres
+.portada.contacto.notatres{
+    height: 55vh;
+    background-image: url(../../assets/mayores-de-sesenta.jpg);
+    margin: 0;
 }
 
 // Media queries - Tablet
@@ -77,5 +102,9 @@
 
     .encabezadoIndex{
         font-size: 2.3rem;
+    }
+
+    .portada.contacto.notatres{
+        background-size: contain;
     }
 }

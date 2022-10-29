@@ -19,6 +19,17 @@ body {
   background-color: #f6f6f6;
 }
 
+.signature {
+  background-color: white;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+.signature__text {
+  font-family: "Raleway";
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.59);
+}
+
 .encabezadoIndex {
   font-family: "DM Serif Display", serif;
   font-size: 1.5rem;
@@ -343,6 +354,10 @@ span {
   margin-bottom: 20px;
 }
 
+.separacion {
+  margin-bottom: 20px;
+}
+
 @media (min-width: 744px) {
   .notas__tarjeta {
     display: flex;
@@ -365,6 +380,10 @@ span {
   .btn2.desktop {
     margin: 0;
   }
+  .texto {
+    margin-left: 200px;
+    margin-right: 50px;
+  }
 }
 .contacto__title.mobile {
   margin-top: 80px;
@@ -372,6 +391,10 @@ span {
 
 .contacto {
   text-align: center;
+}
+
+.contacto.datos {
+  margin-bottom: 80px;
 }
 
 .contacto__title {
@@ -501,7 +524,7 @@ span {
 
 .portada.contacto {
   height: 55vh;
-  background-image: url(../../assets/tranquilidad.jpg);
+  background-image: url(../assets/contacto-counseling.jpg);
   margin: 0;
 }
 
@@ -513,6 +536,28 @@ span {
 .encabezadoIndex {
   font-family: "DM Serif Display", serif;
   font-size: 1.5rem;
+}
+
+.encabezadoIndex.white {
+  color: white;
+}
+
+.portada.contacto.notauno {
+  height: 55vh;
+  background-image: url(../assets/trabajo-cansancio.jpg);
+  margin: 0;
+}
+
+.portada.contacto.notados {
+  height: 55vh;
+  background-image: url(../assets/enojo-emociones.jpg);
+  margin: 0;
+}
+
+.portada.contacto.notatres {
+  height: 55vh;
+  background-image: url(../../assets/mayores-de-sesenta.jpg);
+  margin: 0;
 }
 
 @media (min-width: 744px) {
@@ -529,6 +574,9 @@ span {
   }
   .encabezadoIndex {
     font-size: 2.3rem;
+  }
+  .portada.contacto.notatres {
+    background-size: contain;
   }
 }
 .header {
@@ -557,6 +605,10 @@ span {
   gap: 10px;
   font-family: "Raleway";
   font-size: 0.8rem;
+}
+
+.active {
+  font-weight: 700;
 }
 
 @media (min-width: 744px) {
@@ -715,7 +767,7 @@ label {
 .footer__logo {
   height: 70px;
   width: 150px;
-  background-image: url(../assets/logo2mama-09.png);
+  background-image: url(../assets/gradelarosa-logo.png);
   background-position: center;
   background-size: cover;
   margin: auto;

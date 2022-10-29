@@ -43,6 +43,10 @@
     margin-bottom: 20px;
 }
 
+.separacion{
+    margin-bottom: 20px;
+}
+
 @media (min-width: 744px){
 
     .notas__tarjeta{
@@ -71,5 +75,10 @@
     
     .btn2.desktop{
         margin: 0;
+    }
+
+    .texto{
+        margin-left: 200px;
+        margin-right: 50px;
     }
 }
