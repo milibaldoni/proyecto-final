@@ -192,7 +192,7 @@ span {
 
 .propuestas__imagen-dos {
   height: 33vh;
-  background-image: url(../assets/propuestas-imagen-dos.png);
+  background-image: url(../assets/puente-hacia-lo-nuevo.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 40px;
@@ -477,6 +477,7 @@ span {
   }
   .btn2:hover {
     font-weight: 800;
+    transition: all 0.25s ease;
   }
   .botones.sobremi {
     margin-bottom: 120px;
@@ -556,7 +557,7 @@ span {
 
 .portada.contacto.notatres {
   height: 55vh;
-  background-image: url(../../assets/mayores-de-sesenta.jpg);
+  background-image: url(../assets/mayores-de-sesenta.jpg);
   margin: 0;
 }
 
